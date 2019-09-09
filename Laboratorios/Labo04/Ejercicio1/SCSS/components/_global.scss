@@ -1,0 +1,30 @@
+$color-primary:  #673ab7;
+$color-secondary:  #3f51b5;
+$color-tertiary:  #d81b60;
+$color-dark: black;
+$color-white: white;
+
+@mixin set-dimentions($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+body {
+    @include set-dimentions(auto, 100vh);
+    box-sizing: border-box;
+  
+    overflow: hidden;
+    background-image: url("https://s2.best-wallpaper.net/wallpaper/2880x1800/1809/Colorful-triangle-geometric-abstract_2880x1800.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  
+    padding: 1em 5%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
